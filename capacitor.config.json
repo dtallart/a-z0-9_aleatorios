@@ -1,0 +1,8 @@
+{
+  "appId": "com.abphomemarine.letrasnumeros",
+  "appName": "Letras y Números",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}

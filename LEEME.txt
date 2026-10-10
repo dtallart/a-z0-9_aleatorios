@@ -1,0 +1,26 @@
+LETRAS Y NÚMEROS — PROYECTO ANDROID PARA COMPILAR EN LA NUBE
+
+Esta versión incluye un workflow de GitHub Actions para generar un APK sin instalar Android Studio ni el Android SDK en tu computadora. Puedes manejar los archivos con Visual Studio Code y un navegador.
+
+FUNCIONAMIENTO DE LA APP
+- Un único botón genera una letra española o un número del 0 al 500.
+- Incluye la Ñ.
+- No se repite ningún resultado hasta completar las 27 letras y los 501 números (528 resultados en total); luego comienza otro ciclo.
+
+PASOS PARA GENERAR EL APK
+1. Entra en https://github.com e inicia sesión o crea una cuenta.
+2. Crea un repositorio nuevo, por ejemplo: letras-numeros-aleatorios.
+3. Sube TODOS los archivos y carpetas de este ZIP al repositorio, incluyendo la carpeta oculta `.github/workflows/`.
+   En GitHub puedes usar Add file > Upload files. Asegúrate de que `.github/workflows/build-apk.yml` quede en esa ruta exacta.
+4. Abre la pestaña Actions del repositorio.
+5. Si GitHub pide habilitar Actions, actívalo para el repositorio.
+6. El workflow se ejecuta al subir los archivos a la rama main/master. También puedes entrar en Actions > Build Android APK > Run workflow.
+7. Cuando termine correctamente, abre la ejecución y baja el artefacto `letras-numeros-debug-apk`.
+8. Descomprime ese artefacto. Dentro estará `app-debug.apk`.
+9. Envía el APK a tu teléfono Android e instálalo. Android podría pedirte permitir la instalación desde esa fuente.
+
+IMPORTANTE
+- Este proyecto genera un APK de depuración para pruebas, no una versión firmada para publicar en Google Play.
+- No requiere instalar Android Studio ni Android SDK en tu PC; GitHub Actions hace la compilación en la nube.
+- El APK aún no está compilado en este ZIP. La compilación ocurre después de subir el proyecto a GitHub y ejecutar el workflow.
+- Si GitHub muestra un error, copia aquí el mensaje de error o comparte una captura y te ayudo a corregirlo.
