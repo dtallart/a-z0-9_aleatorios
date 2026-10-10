@@ -1,0 +1,12 @@
+{
+  "name": "Letras y Números Aleatorios",
+  "short_name": "Letras y Números",
+  "description": "Un botón genera letras españolas o números del 0 al 500 sin repetir hasta completar todos los resultados.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#edf5fb",
+  "theme_color": "#163b66",
+  "icons": []
+}
